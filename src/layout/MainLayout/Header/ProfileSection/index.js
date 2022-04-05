@@ -28,11 +28,11 @@ import {
 import MainCard from 'ui-component/cards/MainCard';
 import Transitions from 'ui-component/extended/Transitions';
 
-import User1 from 'assets/images/users/user-round.svg';
+// import User1 from 'assets/images/users/user-round.svg';
 
 // assets
 import { IconLogout, IconSettings } from '@tabler/icons';
-import { deepOrange, orange, pink } from '@mui/material/colors';
+
 
 // ==============================|| PROFILE MENU ||============================== //
 
@@ -79,6 +79,8 @@ const ProfileSection = () => {
         prevOpen.current = open;
     }, [open]);
 
+
+
     return (
         <>
             <Chip
@@ -102,8 +104,9 @@ const ProfileSection = () => {
                     }
                 }}
                 icon={
+
                     <Avatar
-                        src={<PersonIcon/>}
+                       
                         sx={{
                             ...theme.typography.mediumAvatar,
                             margin: '8px 0 8px 8px !important',
@@ -114,7 +117,8 @@ const ProfileSection = () => {
                         aria-controls={open ? 'menu-list-grow' : undefined}
                         aria-haspopup="true"
                        
-                    />
+                    ><PersonIcon/>
+                        </Avatar>
                 }
                 label={<IconSettings stroke={1.5} size="1.5rem" color={theme.palette.primary.main} />}
                 variant="outlined"

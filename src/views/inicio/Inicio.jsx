@@ -1,6 +1,6 @@
-import { Grid } from '@mui/material';
-import { gridSpacing } from 'store/constant';
-import MainCard from 'ui-component/cards/MainCard';
+// import { Grid } from '@mui/material';
+// import { gridSpacing } from 'store/constant';
+// import MainCard from 'ui-component/cards/MainCard';
 import SamplePage from 'views/sample-page';
 
 const Inicio = () => 
