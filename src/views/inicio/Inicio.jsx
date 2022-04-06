@@ -3,7 +3,7 @@
 // import MainCard from 'ui-component/cards/MainCard';
 import SamplePage from 'views/sample-page';
 
-const Inicio = () => 
+export const Inicio = () => 
 (
     // <MainCard>
     //     <Grid container spacing={gridSpacing}>
@@ -18,4 +18,4 @@ const Inicio = () =>
     // </MainCard>
     <SamplePage/>
 );
-export default Inicio;
+// export default Inicio;
