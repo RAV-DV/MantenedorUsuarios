@@ -3,6 +3,8 @@
 // import MainCard from 'ui-component/cards/MainCard';
 import SamplePage from 'views/sample-page';
 
+import AdmUserLP from 'views/vAdmUser/maUserLandingPage';
+
 export const Inicio = () => 
 (
     // <MainCard>
@@ -16,6 +18,6 @@ export const Inicio = () =>
     //         </Grid>
     //     </Grid>
     // </MainCard>
-    <SamplePage/>
+    <AdmUserLP/>
 );
 // export default Inicio;

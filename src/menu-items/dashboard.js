@@ -13,12 +13,13 @@ const dashboard = {
     children: [
         {
             id: 'default',
-            title: 'Inicio',
+            title: 'Administrador Usuarios',
             type: 'item',
-            url: '/dashboard/default',
+            url: '/admin_usuarios',
             icon: icons.IconDashboard,
             breadcrumbs: false
         }
+        
     ]
 };
 

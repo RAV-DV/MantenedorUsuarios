@@ -8,17 +8,21 @@ import { Provider } from 'react-redux';
 import * as serviceWorker from 'serviceWorker';
 import App from 'App';
 import { store } from 'store';
+import { QueryClient,QueryClientProvider } from 'react-query';
 
 // style + assets
 import 'assets/scss/style.scss';
 
 // ==============================|| REACT DOM RENDER  ||============================== //
+const queryClient =  new QueryClient()
 
 ReactDOM.render(
     <Provider store={store}>
+         <QueryClientProvider client={queryClient}>
         <BrowserRouter>
             <App />
         </BrowserRouter>
+        </QueryClientProvider>
     </Provider>,
     document.getElementById('root')
 );
